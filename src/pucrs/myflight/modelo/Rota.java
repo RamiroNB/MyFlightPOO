@@ -28,4 +28,6 @@ public class Rota {
 	public Aeronave getAeronave() {
 		return aeronave;
 	}
+
+	
 }
