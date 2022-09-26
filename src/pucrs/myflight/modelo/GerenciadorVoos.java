@@ -1,7 +1,6 @@
 package pucrs.myflight.modelo;
 import java.util.ArrayList;
 
-import org.xml.sax.SAXNotSupportedException;
 
 public class GerenciadorVoos {
     private ArrayList<Voo> voos;
@@ -20,5 +19,6 @@ public class GerenciadorVoos {
 		}
     }
 
+    //falta o buscar por data
 
 }
