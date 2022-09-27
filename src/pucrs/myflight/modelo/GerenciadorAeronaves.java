@@ -8,19 +8,17 @@ public class GerenciadorAeronaves {
 		aeronaves = new ArrayList<>();
 	}
 
-    public void AdicionarAeronave(Aeronave aeronaveAtual){
-		aeronaves.add(aeronaveAtual);
+    public void AdicionarAeronave(Aeronave aviao){
+		aeronaves.add(aviao);
 	}
 
-	public void ListarAeronaves(){
-		for(int i=0; i<aeronaves.size(); i++){
-			System.out.println(aeronaves.get(i));
-		}
+	public ArrayList<Aeronave> ListarAeronaves(){
+		return aeronaves;
 	}
 
-	public Aeronave BuscarPorCodigo(String codigo){
+	public Aeronave BuscarPorCodigo(String cod){
 		for(int i=0; i<aeronaves.size(); i++){
-			if(aeronaves.get(i).getCodigo() == codigo){
+			if(aeronaves.get(i).getCodigo() == cod){
 				return aeronaves.get(i);
 			}
 		}

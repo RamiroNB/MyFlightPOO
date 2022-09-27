@@ -8,20 +8,18 @@ public class GerenciadorRotas {
 		rotas = new ArrayList<>();
 	}
 
-    public void AdicionarAeronave(Rota rotaAtual){
+    public void AdicionarRota(Rota rotaAtual){
 		rotas.add(rotaAtual);
 	}
 
-	public void ListarAeronaves(){
-		for(int i=0; i<rotas.size(); i++){
-			System.out.println(rotas.get(i));
-		}
+	public ArrayList<Rota> ListarRotas(){
+		return rotas;
 	}
 
-	public Rota BuscarPorOrigem(Aeroporto origem){
+	public Rota BuscarPorOrigem(Aeroporto orig){
 		for(int i=0; i<rotas.size(); i++){
-			if(rotas.get(i).getOrigem() == origem){
-				return rotas.get(i);
+			if(rotas.get(i).getOrigem() == orig){//ta mandando entregar uma Arraylist, mas será q é mesmo?
+				return rotas.get(i);			// deixei assim pq pra mim n faz sentido devolver uma arlst
 			}
 		}
 		return null;

@@ -1,4 +1,6 @@
 package pucrs.myflight.modelo;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 
@@ -13,12 +15,17 @@ public class GerenciadorVoos {
         voos.add(vooAtual);
     }
 
-    public void ListarVoos(){
-        for(int i=0; i<voos.size(); i++){
-			System.out.println(voos.get(i));
-		}
+    public ArrayList<Voo> ListarVoos(){
+        return voos;
     }
 
-    //falta o buscar por data
-
+    public Voo BuscarData(LocalDateTime dataHora){
+        for(int i=0; i<voos.size(); i++){
+			if(voos.get(i).getDatahora() == dataHora){ //ta dando erro pq Voo é data e hora, 
+                return voos.get(i);               //e o gerenciador manda so buscar por hora, n sei resolver
+                
+            }
+		}
+        return null;
+    }
 }

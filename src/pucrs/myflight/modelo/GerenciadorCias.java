@@ -13,10 +13,8 @@ public class GerenciadorCias {
 		empresas.add(ciaAtual);
 	}
 
-	public void ListarEmpresas(){
-		for(int i=0; i<empresas.size(); i++){
-			System.out.println(empresas.get(i));
-		}
+	public ArrayList<CiaAerea> ListarEmpresas(){
+		return empresas;
 	}
 
 	public CiaAerea BuscarPorCodigo(String codigo){
