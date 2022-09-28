@@ -20,12 +20,11 @@ public class GerenciadorVoos {
         return voos;
     }
 
-    //arrumar
     public ArrayList<Voo> BuscarData(LocalDate data){
         ArrayList<Voo> voosData = new ArrayList<>();
         for(int i=0; i<voos.size(); i++){
-			if(voos.get(i).getDatahora().toLocalDate() == data){ //ta dando erro pq Voo é data e hora, 
-                voosData.add(voos.get(i));               //e o gerenciador manda so buscar por hora, n sei resolver
+			if(voos.get(i).getDatahora().toLocalDate() == data){ 
+                voosData.add(voos.get(i));              
             }
 		}
         return voosData;

@@ -28,7 +28,7 @@ public class App {
 		Geo g3 = new Geo(387742, -91342);
 		Aeroporto a3 = new Aeroporto("003", "Lisbon", g3);
 
-		System.out.println(" A distancia entre Aeroporto Salgado Filho e Santos Drumond é:" + g1.distancia(g1, g2));//teste do 
+		System.out.println(" A distancia entre Aeroporto Salgado Filho e Santos Drumond é:" + Geo.distancia(g1, g2)+"KM");//teste do 
 
 		//Aeronaves
 		Aeronave aa1= new Aeronave("733", "Boeing 737-300");

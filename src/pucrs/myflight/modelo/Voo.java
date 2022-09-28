@@ -44,4 +44,8 @@ public class Voo {
 	public void setStatus(Status novo) {
 		this.status = novo;
 	}
+	// fazer toString em todos!
+	public String toString(){
+		return "";
+	}
 }
