@@ -3,7 +3,7 @@ package pucrs.myflight.modelo;
 public class CiaAerea {
 	private String codigo;
 	private String nome;
-	private static int totalCias= 0;//?? o modelo n pede e isso não seria mais util em gerenciador?
+	private static int totalCias= 0;
 	
 	public CiaAerea(String codigo, String nome) {
 		this.codigo = codigo;
