@@ -4,15 +4,9 @@ import java.util.Collections;
 
 public class GerenciadorRotas {
     private ArrayList<Rota> rotas;
-	private ArrayList<Rota> rotasOrigem;
-	private ArrayList<Rota> rotasDestino;
-
 
     public GerenciadorRotas() {
-		rotas = new ArrayList<>();
-		rotasOrigem = new ArrayList<>();
-		rotasDestino = new ArrayList<>();
-
+		rotas = new ArrayList<>();;
 	}
 
     public void AdicionarRota(Rota rotaAtual){
@@ -24,6 +18,7 @@ public class GerenciadorRotas {
 	}
 
 	public ArrayList<Rota> BuscarPorOrigem(Aeroporto orig){
+		ArrayList<Rota> rotasOrigem = new ArrayList<>();
 		for(int i=0; i<rotas.size(); i++){
 			if(rotas.get(i).getOrigem() == orig){
 				rotasOrigem.add(rotas.get(i));
@@ -32,8 +27,8 @@ public class GerenciadorRotas {
 		return rotasOrigem;
 	}
 
-	
     public ArrayList<Rota> BuscarPorDestino(Aeroporto destino){
+		ArrayList<Rota> rotasDestino = new ArrayList<>();
 		for(int i=0; i<rotas.size(); i++){
 			if(rotas.get(i).getOrigem() == destino){
 				rotasDestino.add(rotas.get(i));

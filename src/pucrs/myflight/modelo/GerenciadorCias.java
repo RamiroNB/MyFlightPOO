@@ -4,12 +4,9 @@ import java.util.ArrayList;
 
 public class GerenciadorCias {
 	private ArrayList<CiaAerea> empresas;
-	private ArrayList<CiaAerea> empresasNome;
-	private ArrayList<CiaAerea> empresasCodigo;
+	
 	public GerenciadorCias() {
 		empresas = new ArrayList<>();
-		empresasNome = new ArrayList<>();
-		empresasCodigo = new ArrayList<>();
 	}
 
 	public void AdicionarEmpresa(CiaAerea ciaAtual){
@@ -20,24 +17,24 @@ public class GerenciadorCias {
 		return empresas;
 	}
 
-	public ArrayList<CiaAerea> BuscarPorCodigo(String codigo){
+	public CiaAerea BuscarPorCodigo(String codigo){
 
 		for(int i=0; i<empresas.size(); i++){
 			if(empresas.get(i).getCodigo() == codigo){
-				empresasCodigo.add(empresas.get(i));
+				return empresas.get(i);
 			}
 		}
-		return empresasCodigo;
+		return null;
 	}
 
-	public ArrayList<CiaAerea> BuscarPorNome(String nome){
+	public CiaAerea BuscarPorNome(String nome){
 		
 		for(int i=0; i<empresas.size(); i++){
 			if(empresas.get(i).getNome() == nome){
-				empresasNome.add(empresas.get(i));
+				return empresas.get(i);
 			}
 		}
-		return empresasNome;
+		return null;
 	}
 
 

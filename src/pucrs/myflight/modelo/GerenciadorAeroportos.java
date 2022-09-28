@@ -4,10 +4,9 @@ import java.util.Collections;
 
 public class GerenciadorAeroportos {
     private ArrayList<Aeroporto> aeroportos;
-    private ArrayList<Aeroporto> aeroportosCodigos;
+
     public GerenciadorAeroportos() {
 		aeroportos = new ArrayList<>();
-		aeroportosCodigos = new ArrayList<>();
 	}
 
     public void AdicionarAeroporto(Aeroporto aeroportoAtual){
@@ -20,13 +19,13 @@ public class GerenciadorAeroportos {
 		}
 	}
 
-	public ArrayList<Aeroporto> BuscarPorCodigo(String codigo){
+	public Aeroporto BuscarPorCodigo(String codigo){
 		for(int i=0; i<aeroportos.size(); i++){
 			if(aeroportos.get(i).getCodigo() == codigo){
-				aeroportosCodigos.add(aeroportos.get(i));
+				return aeroportos.get(i);
 			}
 		}
-		return aeroportosCodigos;
+		return null;
 	}
 
 	public void ordenaNome(){
