@@ -24,16 +24,16 @@ public class Geo {
 		double latSaida = Math.toRadians(aeropSaida.getLatitude());
 		double longitSaida = Math.toRadians(aeropSaida.getLongitude());
 
-		double raioTerra = Math.toRadians(6371);
+		double raioTerra = Math.toRadians(6371);// raio da terra precisa estar em raidanos?
 
-		double d = (2*raioTerra) * Math.asin(Math.sqrt(		(Math.sin((latSaida-latChegada)/2)*Math.sin((latSaida-latChegada)/2)) 	+    (Math.sin((longitSaida-longitChegada)/2 )*Math.sin((longitSaida-longitChegada)/2 )) * Math.cos(latSaida) * Math.cos(latChegada)));
+		double d = (2*raioTerra) * Math.asin(Math.sqrt((Math.sin((latSaida-latChegada)/2)*Math.sin((latSaida-latChegada)/2)) 	+    (Math.sin((longitSaida-longitChegada)/2 )*Math.sin((longitSaida-longitChegada)/2 )) * Math.cos(latSaida) * Math.cos(latChegada)));
 																//ALGUEM VERIFICA ESSA FORMULA, nao sei oque to fazendo errado. Se acertar ja organiza a de baixo 
 		return d;
 	}
 
 	public double distancia(Geo meuGeo){
 		double d=0;
-		double raioTerra = Math.toRadians(6371);
+		double raioTerra = Math.toRadians(6371);// raio da terra precisa estar em raidanos?
 
 		double latSaida = Math.toRadians(meuGeo.getLatitude());
 		double longitSaida = Math.toRadians(meuGeo.getLongitude());

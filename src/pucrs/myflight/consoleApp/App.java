@@ -48,22 +48,7 @@ public class App {
 		LocalDateTime datahora1 = LocalDateTime.of(2022, 9, 27, 17, 06);
 		Voo v1 = new Voo(r1, datahora1, duracao1);
 
-
-
 		Voo v2 = new Voo(r2, duracao4);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		System.out.println("\nMyFlight project...END");

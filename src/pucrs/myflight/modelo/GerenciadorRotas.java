@@ -16,19 +16,21 @@ public class GerenciadorRotas {
 		return rotas;
 	}
 
-	public Rota BuscarPorOrigem(Aeroporto orig){
+	//arrumar
+	public ArrayList<Rota> BuscarPorOrigem(Aeroporto orig){
 		for(int i=0; i<rotas.size(); i++){
 			if(rotas.get(i).getOrigem() == orig){//ta mandando entregar uma Arraylist, mas será q é mesmo?
-				return rotas.get(i);			// deixei assim pq pra mim n faz sentido devolver uma arlst
+				//return rotas.get(i);			// deixei assim pq pra mim n faz sentido devolver uma arlst
 			}
 		}
 		return null;
 	}
 
-    public Rota BuscarPorDestino(Aeroporto destino){
+	//arrumar
+    public ArrayList<Rota> BuscarPorDestino(Aeroporto destino){
 		for(int i=0; i<rotas.size(); i++){
 			if(rotas.get(i).getOrigem() == destino){
-				return rotas.get(i);
+				//return rotas.get(i);
 			}
 		}
 		return null;
