@@ -10,4 +10,13 @@ public class VooEscalas extends Voo{
         this.rotaFinal = rotaFinal;
      }
     
+     public Rota getRotaFinal(){
+        return rotaFinal;
+     }
+
+     @Override
+    public String toString() {
+        return super.toString() + " -> " + rotaFinal;
+    }
+
 }

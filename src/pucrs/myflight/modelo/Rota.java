@@ -30,7 +30,7 @@ public class Rota implements Comparable<Rota>{
 	}
 	//implementação comparable
 	public int compareTo(Rota outra){
-		return cia.getNome().compareTo(outra.cia.getNome());
+		return cia.getNome().compareTo(outra.getCia().getNome());// Tava outra.cia...  ,   alterei pra outra.getCia...
 	}
 
 	

@@ -4,9 +4,13 @@ import java.util.Collections;
 
 public class GerenciadorAeronaves {
     private ArrayList<Aeronave> aeronaves;
+	private ArrayList<Aeronave> aeronavesCodigo;
+
     
     public GerenciadorAeronaves() {
 		aeronaves = new ArrayList<>();
+		aeronavesCodigo = new ArrayList<>();
+		
 	}
 
     public void AdicionarAeronave(Aeronave aviao){
@@ -17,13 +21,13 @@ public class GerenciadorAeronaves {
 		return aeronaves;
 	}
 
-	public Aeronave BuscarPorCodigo(String cod){
+	public ArrayList<Aeronave> BuscarPorCodigo(String cod){
 		for(int i=0; i<aeronaves.size(); i++){
 			if(aeronaves.get(i).getCodigo() == cod){
-				return aeronaves.get(i);
+				aeronavesCodigo.add(aeronaves.get(i));
 			}
 		}
-		return null;
+		return aeronavesCodigo;
 	}
 
 	public void ordenaDescricao(){
