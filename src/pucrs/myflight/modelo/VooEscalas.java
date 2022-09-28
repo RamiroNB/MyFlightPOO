@@ -1,0 +1,13 @@
+package pucrs.myflight.modelo;
+import java.time.Duration;
+import java.time.LocalDateTime;
+
+public class VooEscalas extends Voo{
+    private Rota rotaFinal;
+
+    public VooEscalas(Rota rota, Rota rotaFinal, LocalDateTime datahora, Duration duracao) {
+        super(rota, datahora, duracao); // chama o construtor de Voo
+        this.rotaFinal = rotaFinal;
+     }
+    
+}
