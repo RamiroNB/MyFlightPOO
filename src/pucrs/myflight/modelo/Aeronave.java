@@ -25,9 +25,9 @@ public class Aeronave implements Imprivel, Contaveis, Comparable<Aeronave>{
 	public int quantidade(){//implementção da interface 
 		return totalAeronaves;
 	}
-	//incompleto, fazendo:
+	//incomplementação da interface Comparable<T>
 	public int compareTo(Aeronave outra){
-		return 0;
+		return descricao.compareTo(outra.descricao);
 	}
 }
 
