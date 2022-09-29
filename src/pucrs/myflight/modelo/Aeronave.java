@@ -1,6 +1,6 @@
 package pucrs.myflight.modelo;
 
-public class Aeronave implements Imprivel, Contaveis, Comparable<Aeronave>{
+public class Aeronave implements Imprimivel, Contaveis, Comparable<Aeronave>{
 	private String codigo;
 	private String descricao;
 	private static int totalAeronaves = 0;

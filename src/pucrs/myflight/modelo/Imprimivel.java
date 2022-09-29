@@ -1,5 +1,5 @@
 package pucrs.myflight.modelo;
 
-public interface Imprivel {
+public interface Imprimivel {
     void imprimir();
 }
