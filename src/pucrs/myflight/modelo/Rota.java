@@ -32,6 +32,15 @@ public class Rota implements Comparable<Rota>{
 	public int compareTo(Rota outra){
 		return cia.getNome().compareTo(outra.getCia().getNome());// Tava outra.cia...  ,   alterei pra outra.getCia...
 	}
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("Cia: "+ cia);
+		sb.append("Origem" + origem);
+		sb.append("Destino:"+destino);
+		sb.append("Aeronave:"+aeronave);
+		return sb.toString();
+
+	}
 
 	
 }

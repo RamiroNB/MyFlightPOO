@@ -36,6 +36,9 @@ public  abstract class Voo {
 	}
 	// fazer toString em todos!
 	public String toString(){
+		
 		return "";
+
+
 	}
 }

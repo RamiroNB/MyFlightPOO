@@ -21,17 +21,17 @@ public class App {
 		CiaAerea c2 = new CiaAerea("9090", "TAM");
 
 		//Aeroportos e suas localizaçoes
-		Geo g1 = new Geo(-299942 , -511714 );
+		Geo g1 = new Geo(-29.992934259322457 ,-51.17606774547561);
 		Aeroporto a1 = new Aeroporto("001", "Salgado Filho", g1);
 
-		Geo g2 = new Geo(-229103 , -431631 );
+		Geo g2 = new Geo(-22.91049957 , -43.1631012 );
 		Aeroporto a2 = new Aeroporto("002", "Santos Drumond", g2);
 
 		Geo g3 = new Geo(387742, -91342);
 		Aeroporto a3 = new Aeroporto("003", "Lisbon", g3);
 
 		System.out.println(" A distancia entre Aeroporto Salgado Filho e Santos Drumond é:" + Geo.distancia(g1, g2)+"KM");//teste do 
-
+	
 		//Aeronaves
 		Aeronave aa1= new Aeronave("733", "Boeing 737-300");
 		Aeronave aa2= new Aeronave("332", "A332");

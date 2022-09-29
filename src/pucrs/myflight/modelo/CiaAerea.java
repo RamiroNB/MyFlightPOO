@@ -22,4 +22,10 @@ public class CiaAerea {
 	public static int getTotalCias() {
         return totalCias;
     }
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("Código: "+codigo);
+		sb.append("Nome:"+nome);
+		return sb.toString();
+	}
 }

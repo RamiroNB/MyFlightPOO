@@ -36,6 +36,14 @@ public class GerenciadorCias {
 		}
 		return null;
 	}
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		for(CiaAerea cia: empresas){
+			sb.append(cia.toString());
+			sb.append("\n");
+		}
+		return sb.toString();
+	}
 
 
 }

@@ -26,4 +26,11 @@ public class Aeroporto implements Comparable<Aeroporto>{
 	public int compareTo(Aeroporto outro){
 		return nome.compareTo(outro.getNome());
 	}
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("código:" + codigo);
+		sb.append("nome"+nome);
+		sb.append("local:"+loc);
+		return sb.toString();
+	}
 }
