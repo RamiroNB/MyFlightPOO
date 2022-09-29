@@ -7,6 +7,8 @@ import pucrs.myflight.modelo.CiaAerea;
 import pucrs.myflight.modelo.Geo;
 import pucrs.myflight.modelo.Rota;
 import pucrs.myflight.modelo.Voo;
+import pucrs.myflight.modelo.VooDireto;
+import pucrs.myflight.modelo.VooEscalas;
 
 import java.time.Duration;
 public class App {
@@ -43,11 +45,12 @@ public class App {
 		Duration duracao3 = Duration.ofMinutes(180); 
 		Duration duracao4 = Duration.ofMinutes(240); 
 
-
+		LocalDateTime data = LocalDateTime.now();
 		//Voos e suas datas(Se existe data)
 		LocalDateTime datahora1 = LocalDateTime.of(2022, 9, 27, 17, 06);
 		//Voo v1 = new Voo(r1, datahora1, duracao1);
-
+		VooDireto v1 = new VooDireto(r1, data);
+		System.out.println("Duração voo 1: "+v1.getDuracao());
 		//Voo v2 = new Voo(r2, duracao4);
 
 

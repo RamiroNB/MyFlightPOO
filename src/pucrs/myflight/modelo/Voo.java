@@ -14,7 +14,7 @@ public  abstract class Voo {
 		this.status = Status.CONFIRMADO; // default é confirmado
 	}
 
-	public Voo(Rota rota, Duration duracao) {
+	public Voo(){
 		this.datahora =  LocalDateTime.of(2016, 8, 12, 12, 00);
 		this.status = Status.CONFIRMADO; // default é confirmado
 	}
