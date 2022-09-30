@@ -29,7 +29,6 @@ public class Aeronave implements Imprimivel, Contaveis, Comparable<Aeronave>{
 	public int compareTo(Aeronave outra){
 		return descricao.compareTo(outra.descricao);
 	}
-	@Override
 	public String toString(){
 		return "Codigo: "+codigo+" Descrição: " +descricao;
 	}
