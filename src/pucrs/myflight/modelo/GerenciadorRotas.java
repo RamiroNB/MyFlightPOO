@@ -40,6 +40,13 @@ public class GerenciadorRotas {
 	public void ordenaNomeCia(){
 		Collections.sort(rotas);
 	}
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		for (Rota rota : rotas) {
+			sb.append(rota.toString());
+		}
+		return sb.toString();
+	}
 
 
 }
