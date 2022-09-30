@@ -26,7 +26,6 @@ public class Aeroporto implements Comparable<Aeroporto>{
 	public int compareTo(Aeroporto outro){
 		return nome.compareTo(outro.getNome());
 	}
-	@Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		sb.append("código:" + codigo);
