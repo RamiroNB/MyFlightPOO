@@ -32,6 +32,7 @@ public class GerenciadorVoos {
 	public String toString(){
         StringBuilder sb = new StringBuilder();
         for (Voo voo : voos) {
+            sb.append("Voo: \n");
             sb.append(voo.toString());
             sb.append("\n");
         }

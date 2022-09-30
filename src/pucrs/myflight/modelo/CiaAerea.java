@@ -25,7 +25,7 @@ public class CiaAerea {
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		sb.append("Código: "+codigo);
-		sb.append("Nome:"+nome);
+		sb.append(" Nome: "+nome);
 		return sb.toString();
 	}
 }

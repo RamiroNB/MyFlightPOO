@@ -39,6 +39,7 @@ public class GerenciadorCias {
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		for(CiaAerea cia: empresas){
+			sb.append("Cia: \n");
 			sb.append(cia.toString());
 			sb.append("\n");
 		}

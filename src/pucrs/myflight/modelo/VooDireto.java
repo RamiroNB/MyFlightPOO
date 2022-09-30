@@ -26,7 +26,7 @@ public class VooDireto extends Voo {
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append(super.toString() + "\n" +rota.toString());
+        sb.append(super.toString() + "\n" +rota.toString()+"\n");
         return sb.toString();
     }
     

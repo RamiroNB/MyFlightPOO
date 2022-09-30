@@ -28,9 +28,9 @@ public class Aeroporto implements Comparable<Aeroporto>{
 	}
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
-		sb.append("código:" + codigo);
-		sb.append("nome"+nome);
-		sb.append("local:"+loc.toString());
+		sb.append(" Código: " + codigo);
+		sb.append(" Nome: "+nome);
+		sb.append(" Local: "+loc.toString());
 		return sb.toString();
 	}
 }

@@ -33,6 +33,7 @@ public class GerenciadorAeronaves {
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		for(Aeronave aeronave: aeronaves){
+			sb.append("Aeronave: \n");
 			sb.append(aeronave.toString());
 			sb.append("\n");
 		}

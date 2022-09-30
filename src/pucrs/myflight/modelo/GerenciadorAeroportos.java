@@ -34,6 +34,7 @@ public class GerenciadorAeroportos {
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		for (Aeroporto aeroporto : aeroportos) {
+			sb.append("Aeroporto: \n");
 			sb.append(aeroporto.toString());
 			sb.append("\n");
 		}

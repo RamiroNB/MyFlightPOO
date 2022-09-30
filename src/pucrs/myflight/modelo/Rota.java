@@ -37,7 +37,7 @@ public class Rota implements Comparable<Rota>{
 		sb.append("Cia: "+ cia + "\n");
 		sb.append("Origem" + origem+"\n");
 		sb.append("Destino:"+destino+"\n");
-		sb.append("Aeronave:"+aeronave+"\n");
+		sb.append("Aeronave:"+aeronave.toString()+"\n");
 		return sb.toString();
 
 	}
