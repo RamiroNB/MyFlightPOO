@@ -31,9 +31,15 @@ public class VooEscalas extends Voo{
         return duracao;
      }
 
-     @Override
-    public String toString() {
-        return super.toString() + " -> "; //+rotaFinal;
-    }
+      @Override
+      public String toString() {
+         StringBuilder sb = new StringBuilder();
+         sb.append(super.toString() + "\n" );
+         for (Rota rota : rotas) {
+            sb.append(rota.toString());
+            sb.append("\n");
+         }
+         return sb.toString();
 
+    }
 }
