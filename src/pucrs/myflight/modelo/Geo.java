@@ -55,12 +55,10 @@ public class Geo {
 				
 			return d;  
 	}
-
-
-
-
-
-
-
-
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("Latitude: %.10f \n");
+		sb.append("Longitude: %.10f \n ");
+		return sb.toString();
+	}
 }
