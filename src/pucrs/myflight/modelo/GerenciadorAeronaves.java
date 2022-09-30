@@ -30,5 +30,12 @@ public class GerenciadorAeronaves {
 		Collections.sort(aeronaves);
 	}
 
-
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		for(Aeronave aeronave: aeronaves){
+			sb.append(aeronave.toString());
+			sb.append("\n");
+		}
+		return sb.toString();
+	}
 }
