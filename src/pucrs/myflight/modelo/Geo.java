@@ -57,8 +57,8 @@ public class Geo {
 	}
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
-		sb.append("Latitude: %.10f \n");
-		sb.append("Longitude: %.10f \n ");
+		sb.append("Latitude:" + latitude + "\n");
+		sb.append("Longitude:"+ longitude + "\n");
 		return sb.toString();
 	}
 }
