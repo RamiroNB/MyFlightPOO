@@ -34,10 +34,10 @@ public class Rota implements Comparable<Rota>{
 	}
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
-		sb.append("Cia: "+ cia);
-		sb.append("Origem" + origem);
-		sb.append("Destino:"+destino);
-		sb.append("Aeronave:"+aeronave);
+		sb.append("Cia: "+ cia + "\n");
+		sb.append("Origem" + origem+"\n");
+		sb.append("Destino:"+destino+"\n");
+		sb.append("Aeronave:"+aeronave+"\n");
 		return sb.toString();
 
 	}
