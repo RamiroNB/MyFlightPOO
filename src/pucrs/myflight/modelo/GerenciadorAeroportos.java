@@ -31,4 +31,11 @@ public class GerenciadorAeroportos {
 	public void ordenaNome(){
 		Collections.sort(aeroportos);
 	}
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		for (Aeroporto aeroporto : aeroportos) {
+			sb.append(aeroporto.toString());
+		}
+		return sb.toString();
+	}
 }
