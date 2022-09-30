@@ -44,6 +44,7 @@ public class GerenciadorRotas {
 		StringBuilder sb = new StringBuilder();
 		for (Rota rota : rotas) {
 			sb.append(rota.toString());
+			sb.append("\n");
 		}
 		return sb.toString();
 	}
