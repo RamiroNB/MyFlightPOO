@@ -30,7 +30,7 @@ public class Aeroporto implements Comparable<Aeroporto>{
 		StringBuilder sb = new StringBuilder();
 		sb.append("código:" + codigo);
 		sb.append("nome"+nome);
-		sb.append("local:"+loc);
+		sb.append("local:"+loc.toString());
 		return sb.toString();
 	}
 }
