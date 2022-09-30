@@ -29,4 +29,12 @@ public class GerenciadorVoos {
 		}
         return voosData;
     }
+	public String toString(){
+        StringBuilder sb = new StringBuilder();
+        for (Voo voo : voos) {
+            sb.append(voo.toString());
+            sb.append("\n");
+        }
+        return sb.toString();
+    }
 }
