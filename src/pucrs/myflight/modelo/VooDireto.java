@@ -23,5 +23,11 @@ public class VooDireto extends Voo {
 
         return duracao;
     }
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(super.toString() + "\n" +rota.toString());
+        return sb.toString();
+    }
     
 }
