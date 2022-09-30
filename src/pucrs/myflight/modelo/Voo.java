@@ -36,9 +36,9 @@ public  abstract class Voo {
 	}
 	// fazer toString em todos!
 	public String toString(){
-		
-		return "Status: "+ status + " Data: "+datahora.toString();
-
-
+		StringBuilder sb = new StringBuilder();
+		sb.append("Data/Hora:"+datahora+"\n");
+		sb.append("Status:"+status+"\n");
+		return sb.toString();
 	}
 }
